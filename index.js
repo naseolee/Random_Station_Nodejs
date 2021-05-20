@@ -31,4 +31,4 @@ app.use('/random', require('./routes/random'));
 
 let port = 3000;
 app.listen(port, 
-    () => {console.log('Random Server On http://localhost: + port')});
+    () => {console.log(`Random Server On http://localhost: + ${port})`)});
