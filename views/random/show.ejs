@@ -7,7 +7,12 @@
     <body>
         <%- include('../partials/nav') %>
         <div class="container">
-            <h1 class="show-area"><%= random.station_name %></h1>
+            <div class="show-area">
+                <h1>Go To <%= random.station_name %> Station!</h1>
+            </div>
+            <div class="view-google-map-area">
+                <a href="https://www.google.com/maps/search/<%= random.lat %>,<%= random.lon %>+">View GoogleMap</a>
+            </div>
         </div>
     </body>
 </html>
